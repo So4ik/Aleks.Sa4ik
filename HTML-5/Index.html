@@ -7,13 +7,90 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <form action="http://fe.it-academy.by/TestForm.php" method="post"> 
 
-    <input type="text" name="ФИО">  
+
+<table>
+<form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+    <legend>Строка поиска</legend>
+    <label>
+    <input type="search" maxlength="10" name="search1"></label>
+    <button type="submit">Отправить</button><br>
+    <label><input type="radio" name="Поиск" value="site"> на сайте</label> <label><input type="radio" name="Поиск" value="google"> в google</label>
+</form>
+</table>
+<div align="center"><table>
+<form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+    <legend>Строка поиска</legend>
+    <label>
+    <input type="search" maxlength="10" required name="search2"></label>
+    <button type="submit">Отправить</button><br>
+    <label><input type="radio" name="Поиск[]" value="site"> на сайте</label> <label><input type="radio" name="Поиск[]" value="google"> в google</label>
+
+</form>
+</table></div>
+<table>
+<form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+    <legend>Авторизуйтесь</legend>
+    <input type="text" required name="login"> <br>
+    <input type="password" required name="password"><br> 
+    Оставаться в системе <input type="checkbox"> <br>
+    <button type="button">Войти</button>
+
+</form>
+</table>
+
+<div align="center"><table>
+<form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+    <legend>Как вам?</legend>
+    <input type="radio" name="date_voite" value="2013.12.31"> Ничего <br>
+    <input type="radio" name="date_voite" value="2013.12.31"> Неплохо <br>
+    <input type="radio" name="date_voite" value="2013.12.31"> Хорошо <br>
+    <input type="radio" name="date_voite" value="2013.12.31"> Супер <br>
     <button type="submit">Отправить</button>
 
 </form>
+</table></div>
+<table>
+<form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+    <legend>Оставьте Ваш отзыв</legend>
+    <input type="text" required name="login"><br>
+    <input type="email" required name="email"><br>
+    <legend>Пример формы:</legend>
+    <input type="text" placeholder="Aleks" readonly><br>
+    <input type="email" placeholder="12345@mail.ru" readonly>
+
+</form>
+</table>
+<div align="center"><table>
+<form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+    <select name="city">
+        <optgroup label="Города РБ">
+          <option value="1">Брест</option>
+          <option value="2">Минск</option>
+          <option value="3">Витебск</option>
+        </optgroup>
+        <optgroup label="Города РФ">
+          <option value="4">Москва</option>
+          <option value="5">Рязань</option>
+          <option value="6">Магадан</option>
+        </optgroup>
+</form>
+</table></div>
+<table><form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+    <legend>upload</legend>
+    <legend>Файл:</legend>
+    <input type="file">
+    <legend>Срок хранения(года):</legend>
+    <input type="number">
+    <button type="submit">Загрузить</button>
+</form>
+</table>
+<div align="center"><table><form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+    <legend>Строка поиска</legend>
+    <input type="text" placeholder="Только русские буквы"><br>
+    <input type="tel" placeholder="+XXX-XX-XXXXXXX" maxlength="12">
+</form>
+</table></div>
 
 
 
