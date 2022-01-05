@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <table width="700ppx">
+       <col width="50%">
+       <col width="50%">
+<tr>
+    <td>
+        <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+            <legend>Строка поиска</legend>
+            <label>
+            <input type="search" maxlength="10" name="search1"></label>
+            <button type="submit">Отправить</button><br>
+            <label><input type="radio" name="Поиск" value="site"> на сайте</label> <label><input type="radio" name="Поиск" value="google"> в google</label>
+        </form>
+    </td>
+    <td>
+        <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+            <legend>Строка поиска</legend>
+            <label>
+            <input type="search" maxlength="10" required name="search2"></label>
+            <button type="submit">Отправить</button><br>
+            <label><input type="radio" name="Поиск[]" value="site"> на сайте</label> <label><input type="radio" name="Поиск[]" value="google"> в google</label>
+
+        </form>
+    </td>
+    </tr>
+    <tr>
+<td>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <legend>Авторизуйтесь</legend>
+        <input type="text" required name="login"> <br>
+        <input type="password" required name="password"><br> 
+        Оставаться в системе <input type="checkbox"> <br>
+        <button type="button">Войти</button>
+    
+    </form>
+    </td>
+    <td>
+        <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+            <legend>Как вам?</legend>
+            <input type="radio" name="date_voite" value="2013.12.31"> Ничего <br>
+            <input type="radio" name="date_voite" value="2013.12.31"> Неплохо <br>
+            <input type="radio" name="date_voite" value="2013.12.31"> Хорошо <br>
+            <input type="radio" name="date_voite" value="2013.12.31"> Супер <br>
+            <button type="submit">Отправить</button>
+        
+        </form>
+
+    </td>
+    </tr>
+
+    <tr>
+<td>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <legend>Оставьте Ваш отзыв</legend>
+        <input type="text" required name="login"><br>
+        <input type="email" required name="email"><br>
+        <legend>Пример формы:</legend>
+        <input type="text" placeholder="Aleks" readonly><br>
+        <input type="email" placeholder="12345@mail.ru" readonly>
+    
+    </form>
+
+
+
+
+</td>
+<td>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <select name="city">
+            <optgroup label="Города РБ">
+              <option value="1">Брест</option>
+              <option value="2">Минск</option>
+              <option value="3">Витебск</option>
+            </optgroup>
+            <optgroup label="Города РФ">
+              <option value="4">Москва</option>
+              <option value="5">Рязань</option>
+              <option value="6">Магадан</option>
+            </optgroup>
+    </form>
+
+</td>
+    </tr>
+<tr>
+<td>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <legend>upload</legend>
+        <legend>Файл:</legend>
+        <input type="file">
+        <legend>Срок хранения(года):</legend>
+        <input type="number">
+        <button type="submit">Загрузить</button>
+    </form>
+</td>
+<td>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype="multipart/form-data">
+        <legend>Строка поиска</legend>
+        <input type="text" placeholder="Только русские буквы"><br>
+        <input type="tel" placeholder="+XXX-XX-XXXXXXX" maxlength="12">
+    </form>
+
+</td>
+
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </td>
+
+
+
+
+
+
+
+</tr>   
+   
+   
+   
+   
+   
+   
+    </table> 
+</body>
+</html>
