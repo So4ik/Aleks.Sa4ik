@@ -1,0 +1,24 @@
+body {
+    width: 900px;
+}
+
+#style_0 {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+p.style_1,
+#style_0 {
+    font-family: 'Bad Script', cursive;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+#style_3 {
+    text-align: right;
+    white-space: pre
+}
+
+span {
+    font-style: italic
+}
