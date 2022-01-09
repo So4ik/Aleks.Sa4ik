@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+
+<body>
+    <table width="700px">
+        <col width=50%>
+        <col width=50%>
+        <tr>
+            <td>
+                <p><b>Простая форма поиска с вариантами</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php" name="search" method="get">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="text" maxlength="10" name="search">
+                        <button type="submit">Искать</button><br>
+                        <input type="radio" name="choice" id="site" value="site" checked>
+                        <label for="site">на сайте</label>
+                        <input type="radio" name="choice" id="google" value="google">
+                        <label for="google">в google</label>
+                        <p><i>Длина запроса не более 10 символов</i></p>
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <p><b>Простая форма поиска с вариантами</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php" method="get">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="text" maxlength="10" id="search_plus" autofocus required>
+                        <label for="search_plus">*</label>
+                        <button type="submit">Искать</button><br>
+                        <input type="radio" name="choice_plus" id="site_plus" value="site_plus">
+                        <label for="site_plus">на сайте</label>
+                        <input type="radio" name="choice_plus" id="google_plus" value="google_plus" checked>
+                        <label for="google_plus">в google</label>
+                        <p><i>* - обязательное поле</i></p>
+                        <p><i>Автофокус в поле поиска</i></p>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Простая форма авторизации</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php" name="aut" method="post">
+                    <fieldset>
+                        <legend>Авторизуйтесь</legend>
+                        <input type="text" name="log" id="log" required>
+                        <label for="log">*Логин</label>
+                        <input type="text" name="pass" id="pass" required>
+                        <label for="pass">*Пароль</label><br>
+                        <input type="checkbox" name="system_on" id="system_on" value="true">
+                        <label for="system_on">Оставаться в системе</label><br>
+                        <button type="submit">Искать</button>
+                        <p><i>* - обязательное поле</i></p>
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <p><b>Опрос(голосование)</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php" name="vote" method="post">
+                    <fieldset>
+                        <legend>Как вам?</legend>
+                        <label>
+                            <input type="radio" name="feel" value="no" checked>Ничего
+                        </label><br>
+                        <label>
+                            <input type="radio" name="feel" value="nb">Неплохо
+                        </label><br>
+                        <label>
+                            <input type="radio" name="feel" value="ok">Хорошо
+                        </label><br>
+                        <label>
+                            <input type="radio" name="feel" value="sr">Супер
+                        </label><br>
+                        <button type="submit" name="data_vote" value="2013.12.31">Отправить</button>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Отзыв:</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php" name="opinion" method="post">
+                    <fieldset>
+                        <legend>Оставьте Ваш отзыв</legend>
+                        <label>
+                            <input type="text" name="name" required>*Имя
+                        </label><br>
+                        <label>
+                            <input type="email" name="e-mail" required>*e-mail
+                        </label><br>
+                        <textarea name="opinion_text" cols="20" rows="2"
+                            placeholder="Форма отправки"></textarea><br>
+                        <button type="submit">Отправить</button>
+                        <p><i>* - обязательное поле</i></p>
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <p><b>Выпадающий и мульти списки</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php" name="list" method="post">
+                    <fieldset>
+                        <legend>Города РБ</legend>
+                        <select name="cities1" id="list1">
+                            <optgroup label="Города РБ">
+                                <option value="Brest" selected>Брест</option>
+                                <option value="Minsk">Минск</option>
+                                <option value="Vitebsk">Витебск</option>
+                            </optgroup>
+                            <optgroup label="Города России">
+                                <option value="Moskow">Москва</option>
+                                <option value="Ryazan">Рязань</option>
+                                <option value="Magadan">Магадан</option>
+                            </optgroup>
+                        </select>
+                        <select name="cities2[]" id="list2" size="8" multiple>
+                            <optgroup label="Города РБ">
+                                <option value="Brest" selected>Брест</option>
+                                <option value="Minsk">Минск</option>
+                                <option value="Vitebsk">Витебск</option>
+                            </optgroup>
+                            <optgroup label="Города России">
+                                <option value="Moskow">Москва</option>
+                                <option value="Ryazan">Рязань</option>
+                                <option value="Magadan">Магадан</option>
+                            </optgroup>
+                        </select>
+                        <button type="submit">OK</button>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Загрузка файла на сервер:</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php" name="file" method="post"
+                    enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Upload</legend>
+                        <label for="file">Файл:</label><br>
+                        <input type="file" name="file" id="file"><br>
+                        <label for="storage_years">Срок хранения (года):</label><br>
+                        <input type="number" min="0" max="50" name="storage_years">
+                        <button type="submit">Загрузить</button>
+                    </fieldset>
+                </form>
+            </td>
+            <td>
+                <p><b>Валидация данных HTML5:</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php" name="file" method="post">
+                    <fieldset>
+                        <legend>Строка поиска</legend>
+                        <input type="text" name="search" placeholder="Только русские буквы" pattern="[А-Яа-я]+"><br>
+                        <input type="text" name="tel_number"
+                            pattern="^(\+375)(\-)(29|25|44|33)(\-)(\d{3})(\d{2})(\d{2})$" placeholder="+XXX-XX-XXXXXXX"
+                            autocomplete="off"><br>
+                        <button type="submit">Проверить</button>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
