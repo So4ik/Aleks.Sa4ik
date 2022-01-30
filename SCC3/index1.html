@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu_1</title>
+    <style>
+        div.Menu {
+            width: 100%;
+        }
+
+        div.Menu>div {
+            background-color: gray;
+            border: solid black 1px;
+            border-radius: 3px;
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            margin: -2px;
+            width: 150px;
+        }
+
+        div.Menu2 {
+            width: 100%;
+            display: none
+        }
+
+        div.Menu2>div {
+            background-color: rgb(199, 199, 199);
+            border: solid black 1px;
+            border-radius: 3px;
+            cursor: pointer
+        }
+
+        div.Menu>div:hover div.Menu2 {
+            display: block;
+            position: absolute;
+            top: 100%;
+        }
+
+        div.Menu>div:hover {
+            background-color: rgb(199, 199, 199);
+            
+        }
+
+        @media all and (max-width: 800px) {
+            div.Menu {
+                width: 200px;
+            }
+
+            div.Menu>div {
+                background-color: rgb(150, 25, 25);
+                border: solid black 1px;
+                border-radius: 3px;
+                position: relative;
+                cursor: pointer
+            }
+
+            div.Menu2 {
+                width: 300px;
+                display: none
+            }
+
+            div.Menu2>div {
+                background-color: rgb(199, 199, 199);
+                border: solid black 1px;
+                border-radius: 3px;
+                display: inline-block;
+                margin-right: -4px;
+                width: 30%;
+                cursor: pointer
+            }
+
+            div.Menu>div:hover div.Menu2 {
+                display: inline-block;
+                position: absolute;
+                left: 100%;
+                top: 0%;
+            }
+
+            div.Menu>div:hover {
+                background-color: rgb(199, 199, 199);
+                
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class='Menu'>
+        <div>Понедельник
+            <div class='Menu2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>Вторник
+            <div class='Menu2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>Среда
+            <div class='Menu2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>Четверг
+            <div class='Menu2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+        <div>Пятница
+            <div class='Menu2'>
+                <div>Завтрак</div>
+                <div>Обед</div>
+                <div>Ужин</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
